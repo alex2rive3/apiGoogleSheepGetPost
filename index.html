@@ -1,0 +1,37 @@
+<meta charset="UTF-8">
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<h1>Proyecto para manejar mis gastos</h1>
+<h2>Agregar nuevo gasto</h2>
+
+<div id="form-box">
+<form>
+  <div>
+    <span>Medio de pago:</span> 
+      <select id="medio-pago">
+          <option value="Tarjeta de crédito">Tarjeta de crédito</option>
+          <option value="Tarjeta de débito">Tarjeta de débito</option>
+          <option value="Efectivo">Efectivo</option>
+      </select>
+  </div>
+  
+  <div>
+    <span>Concepto:</span> <input type="text" id="concepto" class="input" placeholder="¿En qué gasté?">
+  </div>
+  
+  <div>
+    <span>Fecha:</span> <input type="date" class="input" id="fecha">
+  </div>
+  
+  <div>
+    <span>Monto:</span> <input type="number" class="input" id="monto" placeholder="¿Cuánto?">
+  </div>
+  
+</form>
+</div>
+
+<div id="button" class="button" onclick="onRegistrarGasto()">Regist rar gasto</div>
+
+<script src="scripts.js"></script>
